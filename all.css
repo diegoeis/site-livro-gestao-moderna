@@ -1,0 +1,397 @@
+
+html {scroll-behavior: smooth;}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 100% roboto, sans-serif;
+}
+
+body {
+  margin-top: 100px;
+  text-rendering: auto;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+}
+
+header {
+  background: #E9B435;
+  padding: 15px 0;
+  margin: 0 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.gm-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gm-menu li {
+  align-content: center;
+  align-items: center;
+}
+
+.gm-menu li a {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 7px 13px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, .7);
+  transition: all .15s linear;
+}
+
+.gm-menu li a:hover {
+  background: #FFF8E8;
+  color: #000;
+}
+
+.gm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#gm-hero {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#gm-hero img {
+  margin: auto;
+  max-width: 415px;      
+  flex: 1 0 535px;
+}
+
+
+#gm-hero div {
+  max-width: 577px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.25em;
+  margin: 50px 0 30px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.2em;
+  max-width: 510px;
+  color: #737373; 
+}
+
+h3 {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  background: none;
+  height: 1px;
+  display: block;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.gm-btn-buy, #gm-form input[type="submit"] {
+  display: block;
+  width: 280px;
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 50%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
+  border-radius: 14px;
+  border: 2px solid #E2AD46;
+  padding: 10px 5px;
+  text-align: center;
+  font:700 1.5em Roboto, Sans-serif;
+  text-decoration: none;
+  color: #000;
+  margin: 40px auto;
+  transition: all .15s linear
+}
+
+.gm-btn-buy:hover, #gm-form input[type="submit"]:hover {
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 8%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
+  background-color: #E2AD46;
+}
+
+a.gm-btn-store.gm-btn-store-clubeautores {display: none;}
+
+.gm-buy-buttons {
+  list-style: none;
+  text-align: center;
+}
+
+#gm-hero .gm-buy-buttons {text-align: left;}
+
+.gm-buy-buttons li {
+  width: 190px;
+  height: auto;
+  list-style: none;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.gm-buy-buttons li a {
+  padding: 0;
+  display: inline-block;
+  width: auto;
+}
+.gm-buy-buttons li img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section > div {
+  flex: 1;
+}
+section > div:first-child {
+  margin-right: 25px;
+  text-align: right;
+  flex-basis: 400px;
+  max-width: 450px;
+}
+
+.gm-side > img {
+  max-width: 340px;
+  margin-bottom: 15px;
+}
+
+#gm-about div:first-child {
+  flex: 1 0 400px;
+  max-width: 345px;
+}
+
+#gm-about .gm-btn-buy { margin-right: 35px; }
+#gm-forwho img {
+  max-width: 100%;
+}
+#gm-forwho div:first-child {
+  max-width: 600px;
+}
+
+#gm-summary {
+  display: flex;
+}
+
+#gm-summary ul {
+  font-size: 1em;
+  font-weight: 100;
+  list-style: none;
+}
+
+#gm-summary li {
+  margin-bottom: 3px;
+}
+
+#gm-summary li b {
+  display: block;
+  padding: 20px 0 3px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 70px;
+  background: #3A3B39;
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1em;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #E9B435;
+}
+
+#gm-form {
+  display: block;
+}
+
+#mc_embed_signup {
+  display: block;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.indicates-required {font-size: .8em; float: right;}
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#mc_embed_signup label + input {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+#gm-form small {
+  font-size: .9em;
+  text-align: center;
+  display: block;
+  padding: 20px 0 0;
+}
+
+#gm-form input[type="submit"] {
+  cursor: pointer;
+}
+
+.gm-btn-gotop {
+  float: right;
+  font-size: .9rem;
+  color: #000;
+  position: relative;
+  bottom: -85px;
+  right: 10px;
+  padding: 5px 10px;
+  background: #fff;
+}
+
+.gm-btn-gotop:hover {
+  background: #E9B435;
+  text-decoration: none;
+}
+
+.gm-btn-store {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  height: auto;
+  width: 340px;
+  transition: all linear .10s;
+}
+.gm-btn-store:hover {
+  opacity: .7
+}
+
+#gm-hero .gm-btn-store {
+  text-align: left;
+}
+
+.gm-menu li a.gm-btn-buy-header {
+  background: #000;
+  color: #fff;
+}
+
+
+/****
+** MOBILE
+****/
+@media screen and (max-width: 900px) {
+  body {
+    margin-top: 180px;
+  }
+  .gm-container {padding: 0;}
+  #gm-hero {
+    display: block;
+    width: 80%;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  #gm-hero > img {
+    display: none;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #gm-hero h1 {
+    padding: 0;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+
+  #gm-hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 0 20px;
+  }
+  img {max-width: 100%;}
+
+  .gm-btn-gotop {display: none}
+
+  h2 {
+    font-size: 1.5em;
+  }
+  section {display: block}
+  section > div, 
+  #gm-summary {
+    display: block;
+    padding: 0 30px;
+  }
+
+  section > div img {
+    margin-bottom: 20px;
+  }
+  section > div:first-child {
+    text-align: center;
+  }
+
+  h3 {font-size: 2.4em;}
+
+  p {font-size: 1em;}
+  hr {margin: 25px 0;}
+
+  .gm-menu li a {margin-bottom: 10px;}
+
+  .gm-side > img {width: 90%;}
+
+  .gm-btn-buy, #gm-form input[type="submit"] {
+    width: 80%;
+    font-size: .7rem;
+    margin: 0 auto;
+    display: block;
+  }
+  #gm-about .gm-side > img {
+    max-width: 50%;
+  }
+  #gm-about div:first-child {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    text-align: center;
+  }
+
+}

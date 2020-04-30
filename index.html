@@ -24,370 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-  <style type="text/css">
-      
-    html {scroll-behavior: smooth;}
-    *, body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font: 100% roboto, sans-serif;
-    }
-
-    body {
-      margin-top: 100px;
-      text-rendering: auto;
-      text-rendering: optimizeSpeed;
-      text-rendering: optimizeLegibility;
-      text-rendering: geometricPrecision;
-    }
-
-    header {
-      background: #E9B435;
-      padding: 15px 0;
-      margin: 0 0 50px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 2;
-    }
-
-    .gm-menu {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .gm-menu li {
-      align-content: center;
-      align-items: center;
-    }
-
-    .gm-menu li a {
-      display: inline-block;
-      font-size: 1rem;
-      text-align: center;
-      color: #000;
-      text-decoration: none;
-      border: 1px solid rgba(255, 255, 255, 0);
-      padding: 7px 13px;
-      border-radius: 5px;
-      margin: 0 5px;
-      background: rgba(255, 255, 255, .7);
-      transition: all .15s linear;
-    }
-
-    .gm-menu li a:hover {
-      background: #FFF8E8;
-      color: #000;
-    }
-
-    .gm-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    #gm-hero {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-    }
-
-    #gm-hero img {
-      margin: auto;
-      max-width: 415px;      
-      flex: 1 0 535px;
-    }
-
-
-    #gm-hero div {
-      max-width: 577px;
-    }
-
-    h1 {
-      font-weight: 700;
-      font-size: 3.25em;
-      margin: 50px 0 30px;
-    }
-
-    h2 {
-      font-weight: 300;
-      font-size: 2.2em;
-      max-width: 510px;
-      color: #737373; 
-    }
-
-    h3 {
-      text-align: center;
-      font-size: 3.5em;
-      font-weight: 700;
-      margin-bottom: 50px;
-    }
-
-    p {
-      font-size: 1.25em;
-      font-weight: 300;
-      line-height: 1.6;
-      margin-bottom: 20px
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid rgba(0, 0, 0, .1);
-      background: none;
-      height: 1px;
-      display: block;
-      width: 100%;
-      margin: 100px 0;
-    }
-
-    .gm-btn-buy, #gm-form input[type="submit"] {
-      display: block;
-      width: 280px;
-      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 50%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
-      border-radius: 14px;
-      border: 2px solid #E2AD46;
-      padding: 10px 5px;
-      text-align: center;
-      font:700 1.5em Roboto, Sans-serif;
-      text-decoration: none;
-      color: #000;
-      margin: 40px auto;
-      transition: all .15s linear
-    }
-
-    .gm-btn-buy:hover, #gm-form input[type="submit"]:hover {
-      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 8%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
-      background-color: #E2AD46;
-    }
-
-    section {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    section > div {
-      flex: 1;
-    }
-    section > div:first-child {
-      margin-right: 25px;
-      text-align: right;
-      flex-basis: 400px;
-      max-width: 450px;
-    }
-    
-    #gm-about img {
-      max-width: 340px;
-    }
-
-    #gm-about div:first-child {
-      flex: 1 0 400px;
-      max-width: 400px;
-    }
-    #gm-about .gm-btn-buy { margin-right: 35px; }
-    #gm-forwho img {
-      max-width: 100%;
-    }
-    #gm-forwho div:first-child {
-      max-width: 600px;
-    }
-
-    #gm-summary {
-      display: flex;
-    }
-
-    #gm-summary ul {
-      font-size: 1em;
-      font-weight: 100;
-      list-style: none;
-    }
-
-    #gm-summary li {
-      margin-bottom: 3px;
-    }
-
-    #gm-summary li b {
-      display: block;
-      padding: 20px 0 3px;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: 70px;
-      background: #3A3B39;
-      text-align: center;
-      color: #fff;
-    }
-
-    footer p {
-      font-size: 1em;
-      padding: 15px 0;
-    }
-
-    footer a {
-      color: #E9B435;
-    }
-
-    #gm-form {
-      display: block;
-    }
-
-    #mc_embed_signup {
-      display: block;
-      text-align: left;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .indicates-required {font-size: .8em; float: right;}
-
-    #mc_embed_signup label {
-      display: block;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-
-    #mc_embed_signup label + input {
-      margin-bottom: 10px;
-      display: block;
-      width: 100%;
-      padding: 5px 10px;
-      border: 1px solid rgba(0, 0, 0, .2);
-    }
-
-    #gm-form small {
-      font-size: .9em;
-      text-align: center;
-      display: block;
-      padding: 20px 0 0;
-    }
-
-    #gm-form input[type="submit"] {
-      cursor: pointer;
-    }
-
-    .gm-btn-gotop {
-      float: right;
-      font-size: .9rem;
-      color: #000;
-      position: relative;
-      bottom: -85px;
-      right: 10px;
-      padding: 5px 10px;
-      background: #fff;
-    }
-
-    .gm-btn-gotop:hover {
-      background: #E9B435;
-      text-decoration: none;
-    }
-
-
-    @media screen and (max-width: 700px) {
-      body {
-        margin-top: 180px;
-      }
-      .gm-container {padding: 0;}
-      #gm-hero {
-        display: block;
-        width: 80%;
-        margin: 0 auto 25px;
-        text-align: center;
-      }
-      #gm-hero img {
-        display: none;
-        max-width: 80%;
-        margin: 0 auto;
-      }
-
-      #gm-hero h1 {
-        padding: 0;
-        font-size: 1.7rem;
-        margin-bottom: 10px;
-      }
-
-      #gm-hero h2 {
-        font-size: 1.5rem;
-        margin-bottom: 35px;
-      }
-
-      h1 {
-        font-size: 2em;
-        padding: 0 20px;
-      }
-      img {max-width: 100%;}
-
-      .gm-btn-gotop {display: none}
-
-      h2 {
-        font-size: 1.5em;
-      }
-      section {display: block}
-      section > div, 
-      #gm-summary {
-        display: block;
-        padding: 0 30px;
-      }
-
-      section > div img {
-        margin-bottom: 20px;
-      }
-      section > div:first-child {
-        text-align: center;
-      }
-
-      h3 {
-        font-size: 2.4em;
-      }
-
-      p {
-        font-size: 1em;
-      }
-      hr {
-        margin: 25px 0;
-      }
-
-      .gm-menu li a {
-        margin-bottom: 10px;
-      }
-
-      #gm-about img {
-        width: 90%;
-      }
-
-      .gm-btn-buy, #gm-form input[type="submit"] {
-        width: 80%;
-        font-size: .7rem;
-        margin: 0 auto;
-        display: block;
-      }
-
-    }
-    .gm-btn-store {
-      display: inline-block;
-      text-align: center;
-      margin: 0 auto;
-      padding: 15px 0;
-      height: auto;
-      width: 340px;
-      transition: all linear .10s;
-    }
-    .gm-btn-store:hover {
-      opacity: .7
-    }
-
-    #gm-hero .gm-btn-store {
-      text-align: left;
-    }
-
-    .gm-menu li a.gm-btn-buy-header {
-      background: #000;
-      color: #fff;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="all.css">    
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -412,8 +49,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1>Livro Gestão Moderna de Produtos Digitais</h1>
       <h2>O Produto Digital como um meio de entregar valor para o usuário e para o negócio.</h2>
       <br>
-      <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" class="gm-btn-store" data-store="amazon"><img src="images/amazon-badge.png"></a>
-
+      <ul class="gm-buy-buttons">
+        <li>
+          <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store gm-btn-store-amazon"><img src="images/amazon-badge.png"></a>
+        </li>
+        <li>
+          <a href="https://clubedeautores.com.br/livro/gestao-moderna-produtos-digitais" data-click="clubeautores" class="gm-btn-store gm-btn-store-clubeautores"><img src="images/clubeautores-badge.png"></a>
+        </li>
+      </ul>
     </div>
     <img src="images/hero.png" title="imagem por vectorpouch" alt="imagem da capa por vectorpouch">
   </div>
@@ -427,7 +70,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <img src="images/book.jpg" alt="capa do livro Gestão Moderna de Produtos Digitais - imagem ilustrando a jornada de usuário">
 
-      <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store"><img src="images/amazon-badge.png"></a>
+      <ul class="gm-buy-buttons">
+        <li>
+          <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store gm-btn-store-amazon"><img src="images/amazon-badge.png"></a>
+        </li>
+        <li>
+          <a href="https://clubedeautores.com.br/livro/gestao-moderna-produtos-digitais" data-click="clubeautores" class="gm-btn-store gm-btn-store-clubeautores"><img src="images/clubeautores-badge.png"></a>
+        </li>
+      </ul>
     </div>
 
     <div class="gm-text">  
@@ -461,8 +111,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  -->
       <p>A pessoa que gere o produto não é responsável sozinha pela construção do Produto, pelo contrário, ela apenas agrega e integra todas as pessoas que fazem parte do processo de construção e manutenção de um produto digital, que tem por sua obrigação entregar valor para o negócio e para os usuários. Portanto,  esse livro pode e deve ser lido por Product Managers, mas também por qualquer pessoa que esteja envolvida no processo de construção de um produto.</p>
 
-      <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store"><img src="images/amazon-badge.png"></a>
-
+      <ul class="gm-buy-buttons">
+        <li>
+          <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store gm-btn-store-amazon"><img src="images/amazon-badge.png"></a>
+        </li>
+        <li>
+          <a href="https://clubedeautores.com.br/livro/gestao-moderna-produtos-digitais" data-click="clubeautores" class="gm-btn-store gm-btn-store-clubeautores"><img src="images/clubeautores-badge.png"></a>
+        </li>
+      </ul>
     </div>
 
   </section>
@@ -487,9 +143,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Espero que você possa se identificar e aprender como fazer uma gestão moderna de produtos digitais usando métodos, processos e perspectivas de macro de negócio por meio do conteúdo que escrevi nesse livro.</p>
 
       <p>Fale comigo: <a href="https://twitter.com/diegoeis">@diegoeis</a> ou <a href="mailto:diegoeis@gmail.com">por email</a></p>
-
-      <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store"><img src="images/amazon-badge.png"></a>
-      
+      <ul class="gm-buy-buttons">
+        <li>
+          <a href="https://www.amazon.com.br/gp/product/B087F4FJSY?pf_rd_r=F1TZ5AYEB9WNAKMJGKFC&pf_rd_p=96b1767d-f792-4902-8834-039a970f4513" data-click="amazon" class="gm-btn-store gm-btn-store-amazon"><img src="images/amazon-badge.png"></a>
+        </li>
+        <li>
+          <a href="https://clubedeautores.com.br/livro/gestao-moderna-produtos-digitais" data-click="clubeautores" class="gm-btn-store gm-btn-store-clubeautores"><img src="images/clubeautores-badge.png"></a>
+        </li>
+      </ul>
     </div>
 
   </section>
