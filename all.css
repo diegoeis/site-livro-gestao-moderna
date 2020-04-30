@@ -138,7 +138,11 @@ hr {
   background-color: #E2AD46;
 }
 
-a.gm-btn-store.gm-btn-store-clubeautores {display: none;}
+a.gm-btn-store.gm-btn-store-clubeautores {
+  cursor: pointer;
+  pointer-events: none;
+  opacity: .5;
+}
 
 .gm-buy-buttons {
   list-style: none;
