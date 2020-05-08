@@ -140,8 +140,6 @@ hr {
 
 a.gm-btn-store.gm-btn-store-clubeautores {
   cursor: pointer;
-  pointer-events: none;
-  opacity: .5;
 }
 
 .gm-buy-buttons {
