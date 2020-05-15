@@ -203,21 +203,26 @@ section > div:first-child {
 
 #gm-summary {
   display: flex;
+  max-width: 1000px;
+  margin: 0 auto; 
 }
+
 
 #gm-summary ul {
   font-size: 1em;
   font-weight: 100;
   list-style: none;
+  flex: 1 200;
 }
 
 #gm-summary li {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 #gm-summary li b {
   display: block;
-  padding: 20px 0 3px;
+  padding: 20px 0 0;
+  margin-left: -7px;
   font-weight: bold;
 }
 
