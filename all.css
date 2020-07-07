@@ -72,12 +72,15 @@ header {
 
 #gm-hero img {
   margin: auto;
-  max-width: 415px;      
-  flex: 1 0 535px;
+  max-width: 100%;
+  flex: 1 0 335px;
+  width: 330px;
 }
 
+#gm-hero .gm-hero-img {text-align: center;}
 
-#gm-hero div {
+#gm-hero > div {
+  flex: 1;
   max-width: 577px;
 }
 
